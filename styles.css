@@ -39,7 +39,7 @@ h1,h2,h3,h4{color:var(--ink);font-weight:700;letter-spacing:-.02em;line-height:1
 .on-dark .section-desc,.on-dark p{color:#c3cad6}
 
 /* ---------- buttons ---------- */
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:8px;
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:3px;
   font-weight:600;font-size:.95rem;text-decoration:none;border:0;cursor:pointer;
   transition:background .25s,transform .25s,box-shadow .25s;line-height:1}
 .btn svg{transition:transform .25s var(--e)}
