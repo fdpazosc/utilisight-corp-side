@@ -1,163 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilisight Corp | Intelligent Inspections from Above</title>
-    <meta name="description" content="Transport Canada certified drone inspection for solar farms, distribution networks and commercial rooftops across Ontario. 48–72h reporting.">
+    <meta name="description"
+        content="Transport Canada certified drone inspection for solar farms, distribution networks and commercial rooftops across Ontario. 48–72h reporting.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="utilisight-logo-graphic.png">
 </head>
+
 <body>
 
-<header id="hdr">
-    <div class="container hdr-in">
-        <a href="index.html" class="logo">
-            <img src="utilisight-logo-graphic.png" alt="" class="logo-img">
-            <span class="logo-text"><span class="utili">UTILI</span><span class="sight">SIGHT</span></span>
-        </a>
-        <nav aria-label="Primary">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+    <header id="hdr">
+        <div class="container hdr-in">
+            <a href="index.html" class="logo">
+                <img src="utilisight-logo-graphic.png" alt="" class="logo-img">
+                <span class="logo-text"><span class="utili">UTILI</span><span class="sight">SIGHT</span></span>
+            </a>
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                    <li><a href="process.html">Process</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-sm hdr-cta">Request Inspection</a>
+            <button id="burger" aria-label="Open menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div id="mnav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="technology.html">Technology</a>
+        <a href="process.html">Process</a>
+        <a href="contact.html">Contact</a>
+        <div class="mnav-foot">ralvares@utilisight.ca · Ontario-wide operations</div>
+    </div>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <!-- Replace with your drone photo -->
+            <img class="hero-bg" src="hero_bg.jpg" alt="">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="badge" data-reveal><i class="pulse-dot"></i>Certified aerial operations</span>
+                <h1 data-reveal style="--d:80ms">Intelligent inspections from above</h1>
+                <p class="hero-sub" data-reveal style="--d:160ms">We reduce inspection times by up to 80% using drone
+                    technology and detect failures before they occur.</p>
+                <div class="hero-cta" data-reveal style="--d:240ms">
+                    <a href="contact.html" class="btn btn-orange">Request a free inspection
+                        <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
+                            <path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" />
+                        </svg>
+                    </a>
+                    <a href="services.html" class="btn btn-ghost">Our services</a>
+                </div>
+                <p class="hero-note" data-reveal style="--d:300ms">Certified pilots by Transport Canada · Ontario-wide
+                    operations</p>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <div class="stats-band">
+            <div class="container stats-grid">
+                <div class="stat" data-reveal><b>80%</b><span>Faster than manual crews</span></div>
+                <div class="stat" data-reveal style="--d:80ms"><b>98.6%</b><span>Defect detection accuracy</span></div>
+                <div class="stat" data-reveal style="--d:160ms"><b class="accent">48–72h</b><span>Report
+                        turnaround</span></div>
+                <div class="stat" data-reveal style="--d:240ms"><b>100%</b><span>Energy-sector focused</span></div>
+            </div>
+        </div>
+
+        <!-- THE PROBLEM -->
+        <section class="section bg-alt">
+            <div class="container">
+                <p class="kicker" data-reveal>The problem</p>
+                <h2 class="section-title" data-reveal style="--d:60ms">Traditional inspections are slow, costly, and
+                    dangerous</h2>
+                <p class="section-desc" data-reveal style="--d:120ms">Energy operators lose millions to undetected
+                    faults and inefficient maintenance routines. Utilisight helps teams act faster with better data.</p>
+                <div class="grid-3">
+                    <div class="card" data-reveal>
+                        <span class="icon-chip">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <circle cx="11" cy="11" r="8.5" stroke="currentColor" stroke-width="1.8" />
+                                <path d="M11 6.5V11l3 2" stroke="currentColor" stroke-width="1.8" />
+                            </svg>
+                        </span>
+                        <h3>Time inefficiency</h3>
+                        <p>Manual ground inspections take weeks for what drones complete in days.</p>
+                    </div>
+                    <div class="card" data-reveal style="--d:100ms">
+                        <span class="icon-chip">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path
+                                    d="M11 3.5v15M15 6.5c0-1.6-1.8-2.8-4-2.8s-4 1.2-4 2.8 1.8 2.7 4 2.7 4 1.2 4 2.8-1.8 2.8-4 2.8-4-1.2-4-2.8"
+                                    stroke="currentColor" stroke-width="1.8" />
+                            </svg>
+                        </span>
+                        <h3>High operational costs</h3>
+                        <p>Trucks, climbers and shutdowns inflate budgets without improving accuracy.</p>
+                    </div>
+                    <div class="card" data-reveal style="--d:200ms">
+                        <span class="icon-chip">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path d="M11 2.5l7 2.5v5.4c0 4.3-2.9 7.4-7 8.8-4.1-1.4-7-4.5-7-8.8V5l7-2.5z"
+                                    stroke="currentColor" stroke-width="1.8" />
+                                <path d="M11 7.5v4" stroke="currentColor" stroke-width="1.8" />
+                            </svg>
+                        </span>
+                        <h3>Personnel safety risks</h3>
+                        <p>Working at height and near energized assets exposes crews to serious hazards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY UTILISIGHT -->
+        <section class="section">
+            <div class="container split">
+                <div class="split-copy">
+                    <p class="kicker" data-reveal>Why us</p>
+                    <h2 data-reveal style="--d:60ms">The difference of working with specialists</h2>
+                    <p data-reveal style="--d:120ms">We're not a generic drone company. Energy infrastructure is all we
+                        do — and that focus translates into better data, better decisions.</p>
+                    <ul class="check-list" data-reveal style="--d:180ms">
+                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
+                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
+                            </svg>Energy-focused expertise — we only do infrastructure</li>
+                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
+                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
+                            </svg>Certified pilots and thermography analysts (Level II)</li>
+                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
+                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
+                            </svg>Actionable reports prioritized by criticality</li>
+                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
+                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
+                            </svg>Strict safety and regulatory compliance</li>
+                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
+                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
+                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
+                            </svg>Fast 48–72h delivery, Ontario-wide operations</li>
+                    </ul>
+                </div>
+                <div class="split-media tall" data-reveal style="--d:120ms">
+                    <!-- Replace with your drone in-flight photo -->
+                    <img src="why_us.jpg" alt="Inspection drone in flight">
+                    <div class="float-stat"><b>98.6%</b><span>defect detection accuracy across audited projects</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-band">
+            <div class="container cta-in">
+                <div data-reveal>
+                    <h2>Ready to inspect your assets?</h2>
+                    <p>Request a free site assessment. Our team responds within 24 hours.</p>
+                </div>
+                <a href="contact.html" class="btn btn-orange" data-reveal style="--d:100ms">Request inspection
+                    <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
+                        <path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container foot-in">
+            <a href="index.html" class="foot-logo"><span class="utili">UTILI</span><span class="sight">SIGHT</span></a>
+            <ul class="fnav">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="technology.html">Technology</a></li>
                 <li><a href="process.html">Process</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
-        <a href="contact.html" class="btn btn-primary btn-sm hdr-cta">Request Inspection</a>
-        <button id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-</header>
-
-<div id="mnav">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="technology.html">Technology</a>
-    <a href="process.html">Process</a>
-    <a href="contact.html">Contact</a>
-    <div class="mnav-foot">ralvares@utilisight.ca · Ontario-wide operations</div>
-</div>
-
-<main>
-
-<!-- HERO -->
-<section class="hero">
-    <!-- Replace with your drone photo -->
-    <img class="hero-bg" src="hero_bg.jpg" alt="">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-        <span class="badge" data-reveal><i class="pulse-dot"></i>Certified aerial operations</span>
-        <h1 data-reveal style="--d:80ms">Intelligent inspections from above</h1>
-        <p class="hero-sub" data-reveal style="--d:160ms">We reduce inspection times by up to 80% using drone technology and detect failures before they occur.</p>
-        <div class="hero-cta" data-reveal style="--d:240ms">
-            <a href="contact.html" class="btn btn-orange">Request a free inspection
-                <svg width="15" height="15" viewBox="0 0 14 14" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg>
-            </a>
-            <a href="services.html" class="btn btn-ghost">Our services</a>
+            <p class="fine">© <span id="year"></span> Utilisight Corp · ralvares@utilisight.ca</p>
         </div>
-        <p class="hero-note" data-reveal style="--d:300ms">Certified pilots by Transport Canada · Ontario-wide operations</p>
+    </footer>
+
+    <div id="toast" role="status">
+        <div><b>Request received</b><span>Reference <span id="toastRef"></span> · we reply within 24h</span></div>
     </div>
-</section>
 
-<!-- STATS -->
-<div class="stats-band">
-    <div class="container stats-grid">
-        <div class="stat" data-reveal><b>80%</b><span>Faster than manual crews</span></div>
-        <div class="stat" data-reveal style="--d:80ms"><b>98.6%</b><span>Defect detection accuracy</span></div>
-        <div class="stat" data-reveal style="--d:160ms"><b class="accent">48–72h</b><span>Report turnaround</span></div>
-        <div class="stat" data-reveal style="--d:240ms"><b>100%</b><span>Energy-sector focused</span></div>
-    </div>
-</div>
-
-<!-- THE PROBLEM -->
-<section class="section bg-alt">
-    <div class="container">
-        <p class="kicker" data-reveal>The problem</p>
-        <h2 class="section-title" data-reveal style="--d:60ms">Traditional inspections are slow, costly, and dangerous</h2>
-        <p class="section-desc" data-reveal style="--d:120ms">Energy operators lose millions to undetected faults and inefficient maintenance routines. Utilisight helps teams act faster with better data.</p>
-        <div class="grid-3">
-            <div class="card" data-reveal>
-                <span class="icon-chip">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="8.5" stroke="currentColor" stroke-width="1.8"/><path d="M11 6.5V11l3 2" stroke="currentColor" stroke-width="1.8"/></svg>
-                </span>
-                <h3>Time inefficiency</h3>
-                <p>Manual ground inspections take weeks for what drones complete in days.</p>
-            </div>
-            <div class="card" data-reveal style="--d:100ms">
-                <span class="icon-chip">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 3.5v15M15 6.5c0-1.6-1.8-2.8-4-2.8s-4 1.2-4 2.8 1.8 2.7 4 2.7 4 1.2 4 2.8-1.8 2.8-4 2.8-4-1.2-4-2.8" stroke="currentColor" stroke-width="1.8"/></svg>
-                </span>
-                <h3>High operational costs</h3>
-                <p>Trucks, climbers and shutdowns inflate budgets without improving accuracy.</p>
-            </div>
-            <div class="card" data-reveal style="--d:200ms">
-                <span class="icon-chip">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2.5l7 2.5v5.4c0 4.3-2.9 7.4-7 8.8-4.1-1.4-7-4.5-7-8.8V5l7-2.5z" stroke="currentColor" stroke-width="1.8"/><path d="M11 7.5v4" stroke="currentColor" stroke-width="1.8"/></svg>
-                </span>
-                <h3>Personnel safety risks</h3>
-                <p>Working at height and near energized assets exposes crews to serious hazards.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- WHY UTILISIGHT -->
-<section class="section">
-    <div class="container split">
-        <div class="split-copy">
-            <p class="kicker" data-reveal>Why us</p>
-            <h2 data-reveal style="--d:60ms">The difference of working with specialists</h2>
-            <p data-reveal style="--d:120ms">We're not a generic drone company. Energy infrastructure is all we do — and that focus translates into better data, better decisions.</p>
-            <ul class="check-list" data-reveal style="--d:180ms">
-                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Energy-focused expertise — we only do infrastructure</li>
-                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Certified pilots and thermography analysts (Level II)</li>
-                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Actionable reports prioritized by criticality</li>
-                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Strict safety and regulatory compliance</li>
-                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Fast 48–72h delivery, Ontario-wide operations</li>
-            </ul>
-        </div>
-        <div class="split-media tall" data-reveal style="--d:120ms">
-            <!-- Replace with your drone in-flight photo -->
-            <img src="why_us.jpg" alt="Inspection drone in flight">
-            <div class="float-stat"><b>98.6%</b><span>defect detection accuracy across audited projects</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-band">
-    <div class="container cta-in">
-        <div data-reveal>
-            <h2>Ready to inspect your assets?</h2>
-            <p>Request a free site assessment. Our team responds within 24 hours.</p>
-        </div>
-        <a href="contact.html" class="btn btn-orange" data-reveal style="--d:100ms">Request inspection
-            <svg width="15" height="15" viewBox="0 0 14 14" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg>
-        </a>
-    </div>
-</section>
-</main>
-
-<footer>
-    <div class="container foot-in">
-        <a href="index.html" class="foot-logo"><span class="utili">UTILI</span><span class="sight">SIGHT</span></a>
-        <ul class="fnav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="technology.html">Technology</a></li>
-            <li><a href="process.html">Process</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <p class="fine">© <span id="year"></span> Utilisight Corp · ralvares@utilisight.ca</p>
-    </div>
-</footer>
-
-<div id="toast" role="status"><div><b>Request received</b><span>Reference <span id="toastRef"></span> · we reply within 24h</span></div></div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
