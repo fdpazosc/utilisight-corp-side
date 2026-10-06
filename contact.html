@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Utilisight Corp</title>
+    <meta name="description" content="Request an inspection quote. Response within 24 hours. Ontario-wide operations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="utilisight-logo-graphic.png">
+</head>
+<body>
+
+<header id="hdr">
+    <div class="container hdr-in">
+        <a href="index.html" class="logo">
+            <img src="utilisight-logo-graphic.png" alt="" class="logo-img">
+            <span class="logo-text"><span class="utili">UTILI</span><span class="sight">SIGHT</span></span>
+        </a>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="technology.html">Technology</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="btn btn-primary btn-sm hdr-cta">Request Inspection</a>
+        <button id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<div id="mnav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="technology.html">Technology</a>
+    <a href="process.html">Process</a>
+    <a href="contact.html">Contact</a>
+    <div class="mnav-foot">ralvares@utilisight.ca · Ontario-wide operations</div>
+</div>
+
+<main>
+
+<div class="page-hero">
+    <div class="container">
+        <p class="kicker" data-reveal>Contact</p>
+        <h1 data-reveal style="--d:80ms">Request your inspection</h1>
+        <p data-reveal style="--d:160ms">Tell us what you operate and where. We respond within 24 hours with scope, a fixed quote and the earliest flight window.</p>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container contact-grid">
+        <div>
+            <h2 data-reveal>Get in touch</h2>
+            <p data-reveal style="--d:60ms">Our team is available for questions, sample deliverables and scheduling across Ontario.</p>
+            <ul class="info-list" data-reveal style="--d:120ms">
+                <li><span>Email</span><b>ralvares@utilisight.ca</b></li>
+                <li><span>Operations</span><b>Ontario-wide, Canada</b></li>
+                <li><span>Response time</span><b>Within 24 hours</b></li>
+                <li><span>Scheduling</span><b>Same week when possible</b></li>
+            </ul>
+            <ul class="check-list" data-reveal style="--d:180ms">
+                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Free site assessment before every quote</li>
+                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Fixed pricing — no day rates</li>
+                <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none"><circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6"/></svg>Sample reports available on request</li>
+            </ul>
+        </div>
+
+        <div class="form-card" data-reveal style="--d:120ms">
+            <form id="quoteForm" class="fgrid" novalidate>
+                <div class="fld"><label for="fName">Full name</label>
+                    <input id="fName" type="text" autocomplete="name" required>
+                    <span class="msg">Please enter your name</span>
+                </div>
+                <div class="fld"><label for="fCo">Company</label>
+                    <input id="fCo" type="text" autocomplete="organization" required>
+                    <span class="msg">Please enter your company</span>
+                </div>
+                <div class="fld"><label for="fMail">Work email</label>
+                    <input id="fMail" type="email" autocomplete="email" required>
+                    <span class="msg">Please enter a valid email</span>
+                </div>
+                <div class="fld"><label for="fType">Asset type</label>
+                    <select id="fType" required>
+                        <option value="" disabled selected>Select asset type</option>
+                        <option>Solar PV farm</option>
+                        <option>Distribution network</option>
+                        <option>Commercial rooftop</option>
+                        <option>Other infrastructure</option>
+                    </select>
+                    <span class="msg">Please select an asset type</span>
+                </div>
+                <div class="fld"><label for="fSize">Asset size <span style="color:var(--gray);font-weight:400">(optional)</span></label>
+                    <input id="fSize" type="text" placeholder="e.g. 40 MW · 1,800 poles">
+                </div>
+                <div class="fld"><label for="fWin">Target window <span style="color:var(--gray);font-weight:400">(optional)</span></label>
+                    <input id="fWin" type="text" placeholder="e.g. September">
+                </div>
+                <div class="fld full"><label for="fNotes">Scope notes <span style="color:var(--gray);font-weight:400">(optional)</span></label>
+                    <textarea id="fNotes" placeholder="Access constraints, prior findings, deliverables needed…"></textarea>
+                </div>
+                <label class="opt">
+                    <input type="checkbox" id="sndOpt">
+                    <span class="box"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.5L4 7.5L10 1" stroke="currentColor" stroke-width="1.8"/></svg></span>
+                    <span>Play a confirmation tone when my request is sent</span>
+                </label>
+                <button class="btn btn-orange btn-block" id="sendBtn" type="submit">
+                    <span id="btnLabel">Request inspection quote</span>
+                    <svg width="15" height="15" viewBox="0 0 14 14" fill="none"><path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8"/></svg>
+                </button>
+                <p class="form-note">Your request is handled confidentially — no data shared with third parties.</p>
+            </form>
+
+            <div class="sent" id="sentPanel" hidden>
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="27" stroke="#dc832a" stroke-width="2.5"/>
+                    <path d="M19 31l8 8 14-17" stroke="#0e508a" stroke-width="3"/>
+                </svg>
+                <span class="ref" id="refNo">REF UT-2026-0000</span>
+                <h3>Request received</h3>
+                <p>Thank you — we'll respond within 24 hours with scope and pricing for your <b id="sumAsset">asset</b>.</p>
+                <button class="link" id="againBtn" type="button">Send another request</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container foot-in">
+        <a href="index.html" class="foot-logo"><span class="utili">UTILI</span><span class="sight">SIGHT</span></a>
+        <ul class="fnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="technology.html">Technology</a></li>
+            <li><a href="process.html">Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="fine">© <span id="year"></span> Utilisight Corp · ralvares@utilisight.ca</p>
+    </div>
+</footer>
+
+<div id="toast" role="status"><div><b>Request received</b><span>Reference <span id="toastRef"></span> · we reply within 24h</span></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
