@@ -1266,13 +1266,12 @@ footer {
   .stats-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 28px;
+    gap: 20px;
+    padding-inline: 16px; /* <-- Esta es la separación extra del borde en móvil */
   }
   .stat + .stat {
     border-left: 0;
     padding-left: 0;
-  }
-  .stats-grid {
-    gap: 20px;
   }
   .fgrid {
     grid-template-columns: 1fr;
