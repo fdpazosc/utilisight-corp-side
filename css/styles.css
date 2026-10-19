@@ -1384,6 +1384,48 @@ footer {
   font-size: 0.82rem;
 }
 
+/* ---------- blog article styles ---------- */
+.article-body {
+  max-width: 760px;
+  margin-inline: auto;
+}
+.article-body p {
+  margin-bottom: 1.25rem;
+  font-size: 1.08rem;
+  color: #3f4a5a;
+}
+.article-body h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--ink);
+}
+.article-body img {
+  width: 100%;
+  border-radius: var(--r);
+  margin: 2rem 0;
+  box-shadow: var(--sh-md);
+}
+.article-body blockquote {
+  border-left: 4px solid var(--orange);
+  padding-left: 1.5rem;
+  font-style: italic;
+  color: var(--ink);
+  margin: 2rem 0;
+}
+.article-meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.article-meta b {
+  color: var(--blue);
+}
+
 /* ---------- reveal ---------- */
 [data-reveal] {
   opacity: 0;
