@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://utilisight.com/</loc>
+    <loc>https://utilisight.ca/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://utilisight.com/services</loc>
+    <loc>https://utilisight.ca/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://utilisight.com/technology</loc>
+    <loc>https://utilisight.ca/technology</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://utilisight.com/process</loc>
+    <loc>https://utilisight.ca/process</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://utilisight.com/contact</loc>
+    <loc>https://utilisight.ca/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
     <url>
-    <loc>https://utilisight.com/faq</loc>
+    <loc>https://utilisight.ca/faq</loc>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://utilisight.com/blog</loc>
+    <loc>https://utilisight.ca/blog</loc>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
