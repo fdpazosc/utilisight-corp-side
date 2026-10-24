@@ -117,7 +117,9 @@
         el.closest(".fld").classList.remove("err"),
       );
     });
-    form.addEventListener("submit", (e) => {
+    
+    // Cambiamos la función a 'async' para poder esperar la respuesta del servidor
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (busy) return;
       let ok = true;
@@ -128,27 +130,60 @@
         if (bad) ok = false;
       });
       if (!ok) return;
+      
       busy = true;
       sendBtn.disabled = true;
       btnLabel.textContent = "Sending…";
-      setTimeout(() => {
-        const ref = `UT-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
-        if ($("#sndOpt").checked) lockSound();
-        $("#refNo").textContent = "REF " + ref;
-        $("#sumAsset").textContent = (
-          $("#fType").value || "asset"
-        ).toLowerCase();
-        form.hidden = true;
-        sentPanel.hidden = false;
-        toastRef.textContent = ref;
-        toast.classList.add("show");
-        clearTimeout(toastTimer);
-        toastTimer = setTimeout(() => toast.classList.remove("show"), 4500);
+
+      try {
+                // Enviar datos de forma segura a nuestra API en Vercel
+        const response = await fetch('/api/send', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: $("#fName").value,
+            company: $("#fCo").value,
+            email: $("#fMail").value,
+            type: $("#fType").value,
+            size: $("#fSize").value,
+            window: $("#fWin").value,
+            notes: $("#fNotes").value,
+            website: $("#fWebsite").value // <-- AÑADE ESTA LÍNEA
+          })
+        });
+
+        console.log(response);
+
+        // 2. Si el servidor respondió correctamente, mostramos el panel de éxito
+        if (response.ok) {
+          const ref = `UT-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
+          if ($("#sndOpt").checked) lockSound();
+          $("#refNo").textContent = "REF " + ref;
+          $("#sumAsset").textContent = (
+            $("#fType").value || "asset"
+          ).toLowerCase();
+          form.hidden = true;
+          sentPanel.hidden = false;
+          toastRef.textContent = ref;
+          toast.classList.add("show");
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => toast.classList.remove("show"), 4500);
+        } else {
+          // Si el servidor devuelve un error
+          alert("There was an error sending your request. Please try again or email us directly at ralvares@utilisight.ca");
+        }
+      } catch (error) {
+        // Si hay un error de red o no se puede conectar al servidor
+        console.error("Error:", error);
+        alert("A network error occurred. Please check your connection and try again.");
+      } finally {
+        // 3. Restaurar el botón sin importar qué pase
         busy = false;
         sendBtn.disabled = false;
         btnLabel.textContent = "Request inspection quote";
-      }, 1200);
+      }
     });
+
     $("#againBtn").addEventListener("click", () => {
       sentPanel.hidden = true;
       form.hidden = false;

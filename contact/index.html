@@ -107,6 +107,11 @@
 
                 <div class="form-card" data-reveal style="--d:120ms">
                     <form id="quoteForm" class="fgrid" novalidate>
+                        <!-- Trampa para bots (Honeypot). No borrar. -->
+                        <div style="position: absolute; left: -9999px; opacity: 0;" aria-hidden="true">
+                            <label>Do not fill this field if you are human: <input type="text" name="website"
+                                    id="fWebsite" tabindex="-1" autocomplete="off"></label>
+                        </div>
                         <div class="fld"><label for="fName">Full name</label>
                             <input id="fName" type="text" autocomplete="name" required>
                             <span class="msg">Please enter your name</span>
