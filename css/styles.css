@@ -892,7 +892,7 @@ nav a.active::after {
 .rep-panel {
   background: var(--navy);
   border-radius: var(--r);
-  padding: 10px 26px 18px;
+  padding: 10px 15px 18px;
   box-shadow: var(--sh-md);
 }
 .rep-row {

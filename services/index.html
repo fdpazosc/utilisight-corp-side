@@ -6,57 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Utilisight Corp</title>
     <meta name="description"
-        content="Thermographic surveys, solar farm, distribution pole and roof inspection across Ontario. Radiometric data, 48–72h reporting.">
+        content="Thermal inspection services for distribution poles, commercial roofs and solar arrays across Ontario. One flight, clear GPS-tagged data, roofing reports in 48 h.">
     <!-- SEO Y IA PARA SERVICES -->
-    <meta property="og:title" content="Drone Inspection Services in Ontario | Utilisight">
+    <meta property="og:title" content="Thermal Inspection Services in Ontario | Utilisight">
     <meta property="og:description"
-        content="Thermographic surveys, solar farm, distribution pole and roof inspection across Ontario. Radiometric data, 48-72h reporting.">
+        content="Aerial thermal inspections for distribution poles, commercial roofs and solar arrays: one flight, clear data to plan your next steps.">
     <meta property="og:url" content="https://utilisight.ca/services">
     <meta property="og:type" content="website">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Drone Inspection and Thermographic Surveys",
-      "provider": {
-        "@type": "Organization",
-        "name": "Utilisight Corp",
-        "url": "https://utilisight.ca"
-      },
-      "areaServed": {
-        "@type": "State",
-        "name": "Ontario, Canada"
-      },
+      "serviceType": "Drone Thermal Inspection and Thermographic Surveys",
+      "provider": { "@type": "Organization", "name": "Utilisight Corp", "url": "https://utilisight.ca" },
+      "areaServed": { "@type": "State", "name": "Ontario, Canada" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Inspection Services",
         "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Solar farm inspection"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Distribution pole inspection"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Roof inspection"
-            }
-          }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Distribution pole inspection" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial roof inspection" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Solar array inspection" } }
         ]
       }
     }
     </script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
     <link rel="icon" type="image/png" href="../images/utilisight-logo-graphic.png">
 </head>
 
@@ -66,13 +42,11 @@
         <div class="container hdr-in">
             <a href="../" class="logo">
                 <img src="../images/utilisight-logo-graphic.svg" alt="utilisight-logo" class="logo-img">
-                <!-- <img src="images/utilisight-logo-graphic.png" alt="utilisight-logo" class="logo-img"> -->
-                <!-- <span class="logo-text"><span class="utili">UTILI</span><span class="sight">SIGHT</span></span> -->
             </a>
             <nav aria-label="Primary">
                 <ul>
                     <li><a href="../">Home</a></li>
-                    <li><a href="../services">Services</a></li>
+                    <li><a href="../services" class="active">Services</a></li>
                     <li><a href="../technology">Technology</a></li>
                     <li><a href="../process">Process</a></li>
                     <li><a href="../faq">FAQ</a></li>
@@ -97,206 +71,170 @@
         <div class="mnav-foot">ralvares@utilisight.ca · Ontario-wide operations</div>
     </div>
 
-    <main>
+    <main class="svc-page">
 
         <div class="page-hero">
             <div class="container">
-                <p class="kicker" data-reveal>Our services</p>
-                <h1 data-reveal style="--d:80ms">Inspection services</h1>
-                <p data-reveal style="--d:160ms">Advanced aerial solutions tailored for energy grids, solar plants, and
-                    critical assets. One flight answers inspection, compliance and warranty questions at once.</p>
+                <p class="kicker" data-reveal>Our service</p>
+                <h1 data-reveal style="--d:80ms">Thermal inspection services</h1>
+                <p data-reveal style="--d:160ms">Aerial thermal inspections for commercial roofs, solar arrays and
+                    distribution infrastructure: one flight, clear data to plan your next steps.</p>
             </div>
         </div>
 
-        <!-- FEATURED: thermographic surveys -->
+        <!-- THERMOGRAPHIC SURVEYS -->
         <section class="section">
             <div class="container split">
                 <div class="split-copy">
-                    <p class="kicker" data-reveal>Thermographic surveys</p>
-                    <h2 data-reveal style="--d:60ms">Heat, turned into evidence</h2>
-                    <p data-reveal style="--d:120ms">Radiometric thermal capture identifies hotspots and abnormal
-                        heating patterns across electrical and energy assets. Every finding is geolocated, image-linked
-                        and prioritized for action.</p>
+                    <span class="eyebrow" data-reveal>Thermographic surveys</span>
+                    <h2 data-reveal style="--d:60ms">Heat, turned into insight</h2>
+                    <p data-reveal style="--d:120ms">Radiometric thermal capture detects hotspots and abnormal heat
+                        patterns across roofs, solar arrays and electrical assets. Every finding is geolocated, paired
+                        with a visual image and prioritized for follow-up investigation.</p>
                     <p class="caps-label" data-reveal style="--d:160ms">Key detection capabilities</p>
-                    <ul class="caps" data-reveal style="--d:200ms">
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Overheating connectors and breakers</li>
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Load imbalance indications</li>
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Thermal anomalies in modules and strings</li>
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Insulation and moisture signatures</li>
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Early-stage component failures</li>
-                        <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Repeatable baselines for trend analysis</li>
+                    <ul class="ticks two" data-reveal style="--d:200ms">
+                        <li>Abnormal heating at connectors and splices</li>
+                        <li>Phase patterns consistent with load imbalance</li>
+                        <li>Thermal anomalies in modules and strings</li>
+                        <li>Moisture and insulation signatures in roofs</li>
+                        <li>Early signs of component degradation</li>
+                        <li>Repeatable baselines for trend analysis</li>
                     </ul>
-                    <a href="contact" class="btn btn-primary" data-reveal style="--d:240ms">Request a quote
+                    <a href="../contact" class="btn btn-primary" data-reveal style="--d:240ms">Request a quote
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                             <path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" />
                         </svg>
                     </a>
                 </div>
-                <div class="split-media" data-reveal style="--d:120ms">
-                    <!-- Replace with your thermal roof capture -->
-                    <img src="../images/termo.jpg" alt="Thermal roof inspection capture">
+                <div data-reveal style="--d:120ms">
+                    <p class="pair-title">Solar array — aerial thermography</p>
+                    <div class="pair">
+                        <!-- Reemplazar por el par RGB + térmica real de un mismo panel -->
+                        <figure><img src="../images/solar.jpg" alt="Solar array, visual (RGB) capture"><figcaption>Visual (RGB)</figcaption></figure>
+                        <figure><img src="../images/termo.jpg" alt="Solar array, thermal capture"><figcaption>Thermal</figcaption></figure>
+                    </div>
+                    <p class="pair-note">Illustrative example</p>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICE CARDS -->
-        <section class="section bg-alt">
+        <!-- 01 · DISTRIBUTION -->
+        <section class="section bg-alt svc-block">
             <div class="container">
-                <p class="kicker" data-reveal>Also available</p>
-                <h2 class="section-title" data-reveal style="--d:60ms">Targeted inspections for every asset</h2>
-                <p class="section-desc" data-reveal style="--d:120ms">RGB and thermal coverage delivered as geolocated,
-                    priority-ranked findings your maintenance teams can action directly.</p>
-
-                <div class="grid-3">
-                    <div class="card svc-card" data-reveal>
-                        <div class="thumb">
-                            <!-- Replace with your solar farm photo -->
-                            <img src="../images/solar.jpg" alt="Solar farm inspection">
-                        </div>
-                        <div class="svc-body">
-                            <h3>Solar farm inspection</h3>
-                            <p>Aerial thermography across multi-MW arrays in a single mission — before faults hurt
-                                production.</p>
-                            <ul class="caps">
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Cell-level hotspots and PID</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Bypass diode failures</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Disconnected strings</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Tracker misalignment</li>
-                            </ul>
-                            <a href="contact" class="btn btn-primary btn-sm">Request a quote</a>
-                        </div>
-                    </div>
-
-                    <div class="card svc-card" data-reveal style="--d:100ms">
-                        <div class="thumb">
-                            <!-- Replace with your distribution pole photo -->
-                            <img src="../images/electric.jpg" alt="Distribution pole inspection">
-                        </div>
-                        <div class="svc-body">
-                            <h3>Distribution pole inspection</h3>
-                            <p>RGB + thermal surveys up to 44 kV — no climbing, no line shutdowns.</p>
-                            <ul class="caps">
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Hotspots in clamps &amp; connectors</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Damaged or contaminated insulators</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Pole tilt and structural anomalies</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Vegetation encroachment risks</li>
-                            </ul>
-                            <a href="contact" class="btn btn-primary btn-sm">Request a quote</a>
-                        </div>
-                    </div>
-
-                    <div class="card svc-card" data-reveal style="--d:200ms">
-                        <div class="thumb">
-                            <!-- Replace with your roof inspection photo -->
-                            <img src="../images/HVAC.jpg" alt="Roof inspection">
-                        </div>
-                        <div class="svc-body">
-                            <h3>Roof inspection</h3>
-                            <p>High-resolution surveys for commercial and industrial sites, supporting maintenance and
-                                insurance.</p>
-                            <ul class="caps">
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Membrane tears and punctures</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Standing water and drainage problems</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Thermal insulation anomalies</li>
-                                <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                        <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                                    </svg>Documentation for insurance claims</li>
-                            </ul>
-                            <a href="../contact" class="btn btn-primary btn-sm">Request a quote</a>
-                        </div>
-                    </div>
+                <span class="eyebrow" data-reveal>01 · Electrical assets</span>
+                <h2 data-reveal style="--d:60ms">Distribution line inspection</h2>
+                <p class="lead" data-reveal style="--d:100ms">Connections under load heat up when they loosen or
+                    corrode. Comparing similar components side by side shows which one is running hotter, with no
+                    climbing and no shutdown.</p>
+                <div class="pair" data-reveal>
+                    <figure><img src="../images/electric.jpg" alt="Distribution pole, visual (RGB) capture"><figcaption>Visual (RGB)</figcaption></figure>
+                    <figure><img src="../images/termo.jpg" alt="Distribution pole, thermal capture"><figcaption>Thermal</figcaption></figure>
+                </div>
+                <p class="look-label" data-reveal>What we look for</p>
+                <div class="look-grid" data-reveal>
+                    <div class="look-item">Hot connectors, splices and clamps</div>
+                    <div class="look-item">Phase-to-phase patterns consistent with load imbalance</div>
+                    <div class="look-item">Abnormal heating at transformers and cutouts</div>
+                    <div class="look-item">Arresters, reclosers and other pole-mounted equipment</div>
+                    <div class="look-item">Damaged insulators, hardware and vegetation contact</div>
+                    <div class="look-item">GPS-located findings, pole by pole, with thermal + RGB pairs</div>
+                </div>
+                <ul class="pills">
+                    <li>Pole-by-pole locations</li>
+                    <li>Thermal + RGB pairs</li>
+                    <li>Phase comparisons</li>
+                </ul>
+                <div class="svc-foot">
+                    <small>March–November · lines under load</small>
+                    <a href="../contact" class="btn btn-primary btn-sm">Request a quote →</a>
                 </div>
             </div>
         </section>
 
-        <!-- TECHNICAL REPORTS -->
+        <!-- 02 · ROOFING -->
+        <section class="section svc-block">
+            <div class="container">
+                <span class="eyebrow" data-reveal>02 · Roofing</span>
+                <h2 data-reveal style="--d:60ms">Commercial roof inspection</h2>
+                <p class="lead" data-reveal style="--d:100ms">High-resolution surveys for commercial and industrial
+                    sites, supporting maintenance and insurance.</p>
+                <div class="pair" data-reveal>
+                    <figure><img src="../images/HVAC.jpg" alt="Commercial roof, visual (RGB) capture"><figcaption>Visual (RGB)</figcaption></figure>
+                    <figure><img src="../images/termo.jpg" alt="Commercial roof, thermal capture"><figcaption>Thermal</figcaption></figure>
+                </div>
+                <p class="look-label" data-reveal>What we look for</p>
+                <div class="look-grid" data-reveal>
+                    <div class="look-item">Warm zones in the roof field<span>May indicate trapped moisture or wet insulation.</span></div>
+                    <div class="look-item">Heat around vents and drains<span>May point to seal or flashing deterioration.</span></div>
+                    <div class="look-item">Patterns at edges and parapets<span>May be consistent with perimeter flashing issues.</span></div>
+                    <div class="look-item">Uneven heat loss<span>May suggest missing or damaged insulation.</span></div>
+                </div>
+                <ul class="pills">
+                    <li>Report in 48 h</li>
+                    <li>Thermal + RGB pairs</li>
+                    <li>GPS-tagged findings</li>
+                    <li>Estimated area (m²)</li>
+                </ul>
+                <div class="svc-foot">
+                    <small>Year-round · best on clear, calm nights</small>
+                    <a href="../contact" class="btn btn-primary btn-sm">Request a quote →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 03 · SOLAR -->
+        <section class="section bg-alt svc-block">
+            <div class="container">
+                <span class="eyebrow" data-reveal>03 · Solar</span>
+                <h2 data-reveal style="--d:60ms">Solar array inspection</h2>
+                <p class="lead" data-reveal style="--d:100ms">A healthy panel heats evenly. Hot cells, strips or whole
+                    panels stand out in thermal and help your O&amp;M team decide where to look first.</p>
+                <div class="pair" data-reveal>
+                    <figure><img src="../images/solar.jpg" alt="Solar array, visual (RGB) capture"><figcaption>Visual (RGB)</figcaption></figure>
+                    <figure><img src="../images/termo.jpg" alt="Solar array, thermal capture"><figcaption>Thermal</figcaption></figure>
+                </div>
+                <p class="look-label" data-reveal>What we look for</p>
+                <div class="look-grid" data-reveal>
+                    <div class="look-item">Cell-level hotspots</div>
+                    <div class="look-item">Patterns consistent with bypass diode activation</div>
+                    <div class="look-item">Panels or strings not producing</div>
+                    <div class="look-item">Hot connectors and junction boxes</div>
+                    <div class="look-item">Soiling, debris and shading</div>
+                    <div class="look-item">Cracked glass and storm damage</div>
+                </div>
+                <ul class="pills">
+                    <li>Panel-level locations</li>
+                    <li>Thermal + RGB pairs</li>
+                    <li>Severity ranking</li>
+                </ul>
+                <p class="fine-note">Roof areas beneath panels can't be assessed thermally.</p>
+                <div class="svc-foot">
+                    <small>April–October · sunny days, panels producing</small>
+                    <a href="../contact" class="btn btn-primary btn-sm">Request a quote →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- DELIVERABLES -->
         <section class="section">
             <div class="container split">
                 <div class="split-copy">
-                    <p class="kicker" data-reveal>Deliverables</p>
+                    <span class="eyebrow" data-reveal>Deliverables</span>
                     <h2 data-reveal style="--d:60ms">Technical reports your teams can act on</h2>
-                    <p data-reveal style="--d:120ms">Engineering-friendly reporting that turns aerial data into clear
-                        maintenance priorities — delivered in 48 to 72 hours, every finding GPS-tagged.</p>
-                    <ul class="check-list" data-reveal style="--d:180ms">
-                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Defect catalogs with severity ratings</li>
-                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Annotated imagery (RGB + thermal)</li>
-                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>PDF deliverables and GIS-friendly exports</li>
-                        <li><svg width="16" height="16" viewBox="0 0 15 15" fill="none">
-                                <circle cx="7.5" cy="7.5" r="7" stroke="currentColor" stroke-width="1.4" />
-                                <path d="M4.5 7.8l2 2 4-4.5" stroke="currentColor" stroke-width="1.6" />
-                            </svg>Executive summaries with next actions</li>
+                    <p data-reveal style="--d:120ms">Clear, structured reports that turn aerial data into maintenance
+                        priorities. Every finding is GPS-tagged, and roofing reports are delivered in 48 hours.</p>
+                    <ul class="ticks stack" data-reveal style="--d:180ms">
+                        <li>Findings catalog with severity ratings</li>
+                        <li>Annotated imagery (RGB + thermal)</li>
+                        <li>PDF report with GPS coordinates for every finding</li>
+                        <li>Summary with recommended follow-up</li>
                     </ul>
                 </div>
-                <div class="rep-panel" data-reveal style="--d:120ms">
-                    <div class="rep-row"><span><span class="id">UT-0417</span>String 14B — bypass diode
-                            failure</span><span class="sev hi">HIGH</span></div>
-                    <div class="rep-row"><span><span class="id">UT-0418</span>Connector J-22 — hot joint ΔT +41
-                            °C</span><span class="sev hi">HIGH</span></div>
-                    <div class="rep-row"><span><span class="id">UT-0421</span>Module C-07 — cracked cell
-                            cluster</span><span class="sev md">MED</span></div>
-                    <div class="rep-row"><span><span class="id">UT-0427</span>Module A-19 — soiling pattern</span><span
-                            class="sev lo">LOW</span></div>
+                <div class="rep-panel" data-reveal style="--d:150ms">
+                    <div class="rep-row"><span><span class="id">UT-0417</span>Roof Zone 4 — warm area, ΔT +4.4 °C</span><span class="sev hi">HIGH</span></div>
+                    <div class="rep-row"><span><span class="id">UT-0418</span>Connector J-22 — abnormal heating, ΔT +41 °C</span><span class="sev hi">HIGH</span></div>
+                    <div class="rep-row"><span><span class="id">UT-0421</span>String 14B — pattern consistent with bypass diode activation</span><span class="sev md">MODERATE</span></div>
+                    <div class="rep-row"><span><span class="id">UT-0427</span>Module A-19 — soiling pattern</span><span class="sev lo">LOW</span></div>
                 </div>
             </div>
         </section>
