@@ -3,16 +3,6 @@
    Usa las variables de marca definidas en styles.css
    ============================================================ */
 .svc-page .page-hero .kicker,
-.svc-page .eyebrow {
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-  color: var(--orange);
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-.svc-page .page-hero .kicker::before { display: none; }
-.eyebrow { display: block; }
 
 /* check con círculo naranja (CSS, sin SVG repetido) */
 .ticks { list-style: none; display: grid; gap: 12px 24px; }
@@ -45,13 +35,9 @@
 .look-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .look-item {
   position: relative; background: var(--bg-alt); border: 1px solid var(--line);
-  border-radius: 10px; padding: 14px 16px 14px 46px; font-weight: 600; color: var(--ink); font-size: 0.95rem; line-height: 1.45;
+  border-radius: 10px; padding: 14px 16px 14px 16px; font-weight: 600; color: var(--ink); font-size: 0.95rem; line-height: 1.45;
 }
 .bg-alt .look-item { background: #fff; }
-.look-item::before {
-  content: ""; position: absolute; left: 16px; top: 17px; width: 16px; height: 16px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15' fill='none'%3E%3Ccircle cx='7.5' cy='7.5' r='7' stroke='%23e27d1d' stroke-width='1.4'/%3E%3Cpath d='M4.5 7.8l2 2 4-4.5' stroke='%23e27d1d' stroke-width='1.6'/%3E%3C/svg%3E") center/contain no-repeat;
-}
 .look-item span { display: block; font-weight: 400; font-size: 0.88rem; color: var(--body); margin-top: 2px; }
 .pills { display: flex; flex-wrap: wrap; gap: 8px 26px; list-style: none; margin: 22px 0 6px; font-size: 0.9rem; }
 .pills li { display: flex; align-items: center; gap: 8px; }

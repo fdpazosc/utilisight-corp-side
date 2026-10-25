@@ -1573,3 +1573,13 @@ footer {
     justify-content: center;
   }
 }
+.svc-page .eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.svc-page .page-hero .kicker::before { display: none; }
+.eyebrow { display: block; }
