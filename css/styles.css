@@ -204,10 +204,10 @@ html {
 }
 body {
   font:
-    400 16.5px / 1.75 spectral,
+    400 16.5px / 1.75 Segoe UI, "Times New Roman", Times, serif
     /*400 16.5px/1.75 "Acumin Variable Concept",*/
     /*400 16.5px/1.75 "Inter",*/
-    sans-serif;
+    ;
   color: var(--body);
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -713,6 +713,7 @@ nav a.active::after {
   height: 100%;
   object-fit: cover;
   aspect-ratio: 4/3;
+  object-position: -375px center;
   transition: transform 6s var(--e);
 }
 .split-media:hover img {
@@ -1355,6 +1356,7 @@ footer {
   flex-wrap: wrap;
 }
 .foot-logo {
+  font-family: "Acumin Variable Concept", sans-serif;
   font-weight: none;
   font-size: 1.05rem;
   letter-spacing: 0.12em;
@@ -1463,6 +1465,9 @@ footer {
   .sla-steps::before {
     display: none;
   }
+  .split-media img {
+    object-position: -650px center;
+  }
 }
 @media (max-width: 1067px) {
   nav,
@@ -1507,6 +1512,21 @@ footer {
   .hero {
     min-height: 0;
     padding: 130px 0 80px;
+  }
+}
+@media(max-width: 930px) {
+  .split-media img {
+    object-position: -600px center;
+  }
+}
+@media(max-width: 850px) {
+  .split-media img {
+    object-position: -500px center;
+  }
+}
+@media(max-width: 700px) {
+  .split-media img {
+    object-position: -400px center;
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1571,6 +1591,9 @@ footer {
   }
   .socials {
     justify-content: center;
+  }
+  .split-media img {
+    object-position: -300px center;
   }
 }
 .svc-page .eyebrow {
