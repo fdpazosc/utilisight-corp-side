@@ -1,0 +1,123 @@
+/* ============================================================
+   UTILISIGHT — Blog listing (carga después de styles.css)
+   Tarjetas "issue": color sólido + titular serif + imagen en círculo.
+   Solo usa la paleta y tipografía del sitio (navy / naranja #E27D1D / Georgia).
+   ============================================================ */
+.blog-page .page-hero .kicker,
+.blog-page .tag {
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.blog-page .page-hero .kicker {
+  color: var(--orange);
+}
+.blog-page .page-hero .kicker::before {
+  display: none;
+}
+.blog-page .page-hero p {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  max-width: 60ch;
+}
+
+.issue-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.issue {
+    height: 100%;
+    width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  aspect-ratio: 1 / 1.04;
+  border-radius: 18px;
+  padding: clamp(24px, 2.6vw, 32px);
+  border: 1px solid transparent;
+  transition:
+    transform 0.4s var(--e),
+    box-shadow 0.4s var(--e);
+}
+.issue:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sh-md);
+}
+.issue .tag {
+  display: block;
+  margin-bottom: 18px;
+}
+.issue h3 {
+  position: relative;
+  z-index: 2;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: inherit;
+}
+
+/* imagen recortada en círculo, asoma desde abajo y se corta por los bordes de la tarjeta */
+.dome {
+  position: absolute;
+  left: -10%;
+  right: -8%;
+  top: 60%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+.dome img {
+  object-fit: cover;
+  transition: transform 6s var(--e);
+}
+.issue:hover .dome img {
+  transform: scale(1.08);
+}
+
+/* variantes de color de la marca */
+.c-navy {
+  background: var(--navy);
+  color: #fff;
+}
+.c-light {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.c-orange {
+  background: var(--orange);
+  color: var(--navy-deep);
+}
+.c-navy .tag {
+  color: var(--orange);
+}
+.c-light .tag {
+  color: var(--orange-dark);
+}
+.c-orange .tag {
+  color: var(--navy-deep);
+}
+
+.issue:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+  .issue-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .issue-grid {
+    grid-template-columns: 1fr;
+  }
+  .issue {
+    aspect-ratio: 1 / 1.1;
+  }
+}
