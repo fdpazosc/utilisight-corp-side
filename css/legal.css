@@ -1,0 +1,19 @@
+/* ============================================================
+   UTILISIGHT — Páginas legales (carga después de styles.css)
+   ============================================================ */
+.legal-page .page-hero .kicker { font-size: 0.8rem; letter-spacing: 0.2em; }
+.legal-page .page-hero .kicker::before { display: none; }
+.legal-body .updated { font-size: 0.9rem; color: var(--gray); margin-bottom: 2rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
+.legal-body h2 { font-size: 1.3rem; margin: 2.2rem 0 0.8rem; }
+.legal-body p, .legal-body li { font-size: 1.02rem; color: #3f4a5a; }
+.legal-body ul { margin: 0 0 1.25rem 1.3rem; }
+.legal-body li { margin-bottom: 0.45rem; }
+.legal-body a { color: var(--blue); border-bottom: 1.5px solid var(--orange); text-decoration: none; }
+.legal-body a:hover { color: var(--orange); }
+/* Marca los datos que faltan por completar: buscar "todo" antes de publicar */
+mark.todo { background: var(--orange-soft); color: var(--ink); padding: 1px 6px; border-radius: 4px; }
+
+/* Fila legal del pie de página (mover a styles.css) */
+.foot-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 28px; list-style: none; width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 20px; margin-top: 6px; }
+.foot-legal a { color: var(--gray); text-decoration: none; font-size: 0.82rem; }
+.foot-legal a:hover { color: #fff; }

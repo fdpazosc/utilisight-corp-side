@@ -1606,3 +1606,30 @@ footer {
 }
 .svc-page .page-hero .kicker::before { display: none; }
 .eyebrow { display: block; }
+
+/* ---------- footer: fila legal ---------- */
+.foot-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 28px;
+  list-style: none;
+  width: 100%; /* fuerza una fila nueva debajo del resto del pie */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 6px;
+}
+.foot-legal a {
+  color: var(--gray);
+  text-decoration: none;
+  font-size: 0.82rem;
+}
+.foot-legal a:hover {
+  color: #fff;
+}
+
+/* evita que un elemento con atributo hidden se muestre por tener display propio
+   (arregla el panel "Request received" visible antes de enviar el formulario) */
+[hidden] {
+  display: none !important;
+}
