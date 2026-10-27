@@ -29,7 +29,7 @@ Recomendado: que la clienta cree las cuentas con su correo y añada al desarroll
 - [ ] Plazo de respuesta: "1 business day" (How it works) vs "24 hours" (resto del sitio).
 - [ ] Plazo de informes: 48 h en techos y 48–72 h en otros servicios (FAQ y blog dicen 48–72 h).
 - [ ] Precisión de la cámara: ±3 °C o ±3 % según el mockup (antes decía ±1,5 °C).
-- [ ] Fotos reales en pares RGB + térmica para Services; hoy se reutiliza `termo.jpg`.
+- [ ] Fotos reales en pares RGB + térmica para Services; hoy se reutiliza `termo.webp`.
 - [ ] Foto del EVO II 640T y una página real de reporte para How it works.
 - [ ] Blog: los enlaces a `ai-drone-inspections` y `transport-canada-regulations` no tienen página creada; crearlas o quitar las tarjetas. Fechas y tiempos de lectura de cada artículo.
 - [ ] Correcciones de Home del documento "Correcciones_Website_Oct_23" (revisar que estén aplicadas).
@@ -45,7 +45,7 @@ Recomendado: que la clienta cree las cuentas con su correo y añada al desarroll
 
 ## 5. SEO y compartir
 
-- [ ] Crear `images/og-utilisight.jpg` (1200×630, menos de 300 KB).
+- [ ] Crear `images/og-utilisight.webp` (1200×630, menos de 300 KB).
 - [ ] Añadir/actualizar `og:*`, `twitter:*` y `canonical` en las 8 páginas (URLs con barra final).
 - [ ] Corregir `og:url` del artículo del blog (termina en `.html`).
 - [ ] Actualizar `sitemap.xml`: quitar `/technology` y `/process`, añadir `/how-it-works/`, usar barra final en todas.
@@ -60,7 +60,7 @@ Recomendado: que la clienta cree las cuentas con su correo y añada al desarroll
 - [ ] `/blog` redirige a `/blog/` y los artículos abren.
 - [ ] Formulario: validación de campos, envío correcto, correo recibido, mensaje de éxito.
 - [ ] Revisión en móvil (menú, tarjetas del blog, acordeón).
-- [ ] Lighthouse: rendimiento y accesibilidad (las imágenes de `hero_bg.jpg` y fotos grandes conviene optimizarlas).
+- [ ] Lighthouse: rendimiento y accesibilidad (las imágenes de `hero_bg.webp` y fotos grandes conviene optimizarlas).
 
 ## 7. Entrega
 
