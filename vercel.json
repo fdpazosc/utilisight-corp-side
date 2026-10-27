@@ -1,4 +1,5 @@
 {
+  "trailingSlash": true,
   "redirects": [
     { "source": "/technology", "destination": "/how-it-works", "permanent": true },
     { "source": "/technology/", "destination": "/how-it-works", "permanent": true },
