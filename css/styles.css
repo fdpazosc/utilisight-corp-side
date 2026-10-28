@@ -552,7 +552,7 @@ nav a.active::after {
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 99px;
-  padding: 8px 18px 3px 18px;
+  padding: 8px 18px;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 26px;
@@ -565,7 +565,6 @@ nav a.active::after {
   border-radius: 50%;
   background: var(--orange);
   flex: none;
-  transform: translateY(-2px); /* <-- NUEVO: Baja el punto milimétricamente para alinearlo con el texto */
 }
 .pulse-dot::after {
   content: "";
