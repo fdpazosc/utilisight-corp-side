@@ -152,8 +152,6 @@
           })
         });
 
-        console.log(response);
-
         // 2. Si el servidor respondió correctamente, mostramos el panel de éxito
         if (response.ok) {
           const ref = `UT-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
