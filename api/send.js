@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   // CAPA 1: Verificación de Origen (CORS) - Dinámico para Vercel
   const origin = req.headers.origin || req.headers.referer || "";
   // Acepta tu dominio, los subdominios de Vercel y localhost para pruebas
-  const isAllowed = origin.includes("utilisight.ca") || origin.includes("utilisight-intelligent-inspections") || origin.includes("localhost");
+  const isAllowed = origin.includes("utilisight.ca") || origin.includes("utilisight-intelligent-inspections");
   
   if (!isAllowed) {
     return res.status(403).json({ error: "Forbidden: Invalid Origin" });
