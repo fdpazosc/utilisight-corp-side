@@ -5,20 +5,19 @@ module.exports = async (req, res) => {
     return res.status(405).json({ error: "Method Not Allowed" });
   }
 
-  // CAPA 1: Verificación de Origen (CORS)
+  // CAPA 1: Verificación de Origen (CORS) - Dinámico para Vercel
   const origin = req.headers.origin || req.headers.referer || "";
-  const allowedOrigins = [
-    "https://utilisight.ca",
-    "https://utilisight-intelligent-inspections.vercel.app",
-  ];
-  if (!allowedOrigins.some((o) => origin.startsWith(o))) {
+  // Acepta tu dominio, los subdominios de Vercel y localhost para pruebas
+  const isAllowed = origin.includes("utilisight.ca") || origin.includes("utilisight-intelligent-inspections") || origin.includes("localhost");
+  
+  if (!isAllowed) {
     return res.status(403).json({ error: "Forbidden: Invalid Origin" });
   }
 
-  const { name, company, email, type, size, window, notes, website } = req.body;
+  // Protección contra body indefinido
+  const { name, company, email, type, size, window, notes, website } = req.body || {};
 
   // CAPA 2: Trampa para Bots (Honeypot)
-  // Si el campo "website" tiene texto, es un bot. Fingimos que fue exitoso para que no sepan que los detectamos.
   if (website) {
     return res.status(200).json({ success: true, data: { id: "bot_trapped" } });
   }
@@ -27,20 +26,22 @@ module.exports = async (req, res) => {
   if (!name || !company || !email || !type) {
     return res.status(400).json({ error: "Missing required fields" });
   }
+  
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return res.status(400).json({ error: "Invalid email format" });
   }
 
+  // Obtener los correos de las variables de entorno
   const rawEmails = process.env.CONTACT_EMAILS || "";
-  const toEmails = rawEmails
-    .split(",")
-    .map((e) => e.trim())
-    .filter(Boolean);
+  const toEmails = rawEmails.split(",").map((e) => e.trim()).filter(Boolean);
 
   if (toEmails.length === 0) {
     return res.status(500).json({ error: "No recipient emails configured" });
   }
+
+  // INICIALIZACIÓN DE RESEND (Esto faltaba)
+  const resend = new Resend(process.env.RESEND_API_KEY);
 
   try {
     const { data, error } = await resend.emails.send({
@@ -141,7 +142,7 @@ module.exports = async (req, res) => {
                         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:30px;">
                           <tr>
                             <td align="center">
-                              <a href="mailto:${email}" style="background-color:#E27D1D; color:#ffffff; text-decoration:none; padding:14px 30px; border-radius:5px; font-weight:600; display:inline-block;">Reply to ${name.split(" ")[0]}</a>
+                              <a href="mailto:${email}" style="background-color:#E27D1D; color:#ffffff; text-decoration:none; padding:14px 30px; border-radius:5px; font-weight:600; display:inline-block;">Reply to ${name}</a>
                             </td>
                           </tr>
                         </table>
@@ -172,6 +173,6 @@ module.exports = async (req, res) => {
     res.status(200).json({ success: true, data });
   } catch (e) {
     console.error("Error del servidor:", e);
-    res.status(500).json({ error: "Server error" });
+    res.status(500).json({ error: e.message || "Server error" });
   }
 };
