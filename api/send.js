@@ -35,13 +35,20 @@ module.exports = async (req, res) => {
     return res.status(400).json({ error: "Invalid email format" });
   }
 
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  const toEmail = process.env.CONTACT_EMAIL;
+  const rawEmails = process.env.CONTACT_EMAILS || "";
+  const toEmails = rawEmails
+    .split(",")
+    .map((e) => e.trim())
+    .filter(Boolean);
+
+  if (toEmails.length === 0) {
+    return res.status(500).json({ error: "No recipient emails configured" });
+  }
 
   try {
     const { data, error } = await resend.emails.send({
       from: "Utilisight Web <noreply@utilisight.ca>",
-      to: toEmail,
+      to: toEmails,
       reply_to: email,
       subject: `New Inspection Request from ${name} - ${company}`,
       html: `
