@@ -121,7 +121,3 @@ Cada página debe tener en su `<head>`: `title`, `description`, `canonical`, eti
 
 **Cambiar colores de la marca:** variables al inicio de `css/styles.css`
 (navy `#1d2645`, azul `#0e508a`, gris `#979ea8`, naranja `#e27d1d`).
-
-## Pendientes conocidos
-
-Ver `documentation/CHECKLIST_ENTREGA.md`.
