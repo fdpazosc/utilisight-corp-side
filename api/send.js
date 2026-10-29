@@ -9,9 +9,6 @@ module.exports = async (req, res) => {
   const origin = req.headers.origin || req.headers.referer || "";
   const allowedOrigins = [
     "https://utilisight.ca",
-    "http://localhost:3000",
-    "http://localhost:5173",
-    "http://localhost:8080",
     "https://utilisight-intelligent-inspections.vercel.app",
   ];
   if (!allowedOrigins.some((o) => origin.startsWith(o))) {
