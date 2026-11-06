@@ -9,8 +9,7 @@
         content="Answers to common questions about drone inspections, reporting times, safety, and certifications for Utilisight Corp in Ontario.">
 
     <!-- SEO Y IA PARA FAQ -->
-    <!-- Open Graph / redes sociales / WhatsApp -->
-    <link rel="canonical" href="https://utilisight.ca/">
+    <link rel="canonical" href="https://utilisight.ca/faq">
     <meta property="og:site_name" content="Utilisight Corp">
     <meta property="og:locale" content="en_CA">
     <meta property="og:type" content="website">
@@ -19,17 +18,11 @@
     <meta property="og:description"
         content="Transport Canada certified drone thermal inspections for solar farms, distribution networks and commercial roofs across Ontario.">
     <meta property="og:image" content="https://utilisight.ca/images/og-utilisight.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Utilisight Corp: certified drone thermal inspections in Ontario">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Utilisight Corp | Drone Thermal Inspections in Ontario">
     <meta name="twitter:description"
         content="Certified aerial inspections for solar, utility and roof assets across Ontario.">
-    <meta name="twitter:image" content="https://utilisight.ca/images/og-utilisight.jpg">
-    <meta name="twitter:image:alt" content="Utilisight Corp: certified drone thermal inspections in Ontario">
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -37,51 +30,203 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do we need to shut down operations or solar panels for the inspection?",
+          "name": "Do we need to shut down operations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. One of the main advantages of drone inspections is that they are non-intrusive. We capture optical and thermal data without requiring you to shut down power lines, solar arrays, or facility operations."
+            "text": "No. Solar arrays and distribution lines need to be operating, because anomalies show up under load. Roof inspections are done from the air, with no access to the building interior."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the typical turnaround time for a report?",
+          "name": "What areas do you serve?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We operate on a strict 48 to 72-hour SLA. From the moment the drone lands and data is checksummed, you will receive your structured report, defect register, and GIS exports."
+            "text": "The Greater Toronto Area and Southern Ontario. For sites further away, contact us and we'll confirm availability."
           }
         },
         {
           "@type": "Question",
-          "name": "Are your pilots certified to fly commercially?",
+          "name": "How much does an inspection cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. All our pilots hold Transport Canada Advanced Operations RPAS certifications. We also handle NAV CANADA authorizations in-house, and our analysts are Level II certified thermographers."
+            "text": "It depends on the asset type, site size and access. Send us the details and we'll prepare a free quote."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens if the weather is bad on the scheduled flight day?",
+          "name": "What happens if the weather is bad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Safety and data quality are our priorities. If weather conditions (rain, high winds, heavy cloud cover) prevent a safe or accurate flight, we will reschedule the mission at no additional cost to you."
+            "text": "Thermal imaging needs the right conditions: dry, calm and, for solar, sunny. We check conditions before every flight. If they aren't suitable, we reschedule to the next good window at no extra cost."
           }
         },
         {
           "@type": "Question",
-          "name": "In what format are the final reports delivered?",
+          "name": "Why are roof inspections done early in the morning?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Reports are delivered in PDF format for executive summaries, CSV for the defect register, and GeoTIFF for GIS-friendly exports. Every finding is GPS-tagged and includes annotated imagery."
+            "text": "After sunset, wet insulation holds heat longer than dry insulation. Flying in the early hours makes those differences easier to see."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you inspect the roof beneath solar panels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Thermal cameras can't see through panels. We assess the accessible roof areas and the system interfaces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until I receive my report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roofing reports are delivered within 48 hours of the flight. For solar and distribution, timing depends on site size and is confirmed in your quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What will I receive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A PDF report with paired thermal and visual images, GPS coordinates, temperature differences and a severity rating for every finding, plus recommended follow-up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a thermal anomaly mean there's damage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not necessarily. Thermography flags areas that behave differently and may need attention. A qualified contractor confirms the cause through physical testing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you also do repairs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We're an independent inspection company. We don't sell repairs, roofing or solar installs, so our findings are objective."
           }
         }
       ]
     }
     </script>
 
-    <!-- Asegúrate de usar tus fuentes locales aquí si ya las descargaste -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../images/utilisight-logo-graphic.png">
+    
+    <!-- Estilos específicos para el diseño interactivo del FAQ -->
+    <style>
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 40px;
+            align-items: start;
+        }
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .faq-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 14px 16px;
+            border-radius: 8px;
+            font-size: 15px;
+            color: var(--body);
+            cursor: pointer;
+            text-align: left;
+            background: transparent;
+            border: none;
+            width: 100%;
+            font-family: inherit;
+            transition: background 0.2s, color 0.2s;
+        }
+        .faq-item em {
+            font-style: normal;
+            font-size: 12px;
+            color: var(--gray);
+            width: 22px;
+            font-weight: 700;
+        }
+        .faq-item:hover {
+            background: var(--bg-alt);
+            color: var(--ink);
+        }
+        .faq-item.on {
+            background: var(--bg-alt);
+            color: var(--ink);
+            font-weight: 700;
+        }
+        .faq-item.on em {
+            color: var(--orange);
+        }
+        .faq-panel {
+            background: var(--navy);
+            border-radius: 14px;
+            padding: 36px;
+            color: #fff;
+            align-self: start;
+            min-height: 380px;
+            position: sticky;
+            top: 90px;
+        }
+        .faq-tag {
+            display: inline-block;
+            font-size: 11px;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            background: rgba(226, 125, 29, 0.18);
+            color: var(--orange-soft);
+            padding: 5px 12px;
+            border-radius: 999px;
+            margin: 0 0 18px;
+        }
+        .faq-panel h3 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 16px;
+            line-height: 1.3;
+            color: #fff;
+        }
+        .faq-panel p {
+            font-size: 16px;
+            color: #c9d1de;
+            line-height: 1.75;
+            margin: 0 0 28px;
+        }
+        .faq-panel-foot {
+            border-top: 1px solid rgba(255,255,255,0.12);
+            padding-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            color: #c9d1de;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .faq-panel-foot a {
+            background: var(--orange);
+            color: #fff;
+            padding: 9px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        @media (max-width: 860px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .faq-panel {
+                position: static;
+                min-height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -90,8 +235,6 @@
         <div class="container hdr-in">
             <a href="../" class="logo">
                 <img src="../images/utilisight-logo-graphic.svg" alt="utilisight-logo" class="logo-img">
-                <!-- <img src="images/utilisight-logo-graphic.png" alt="utilisight-logo" class="logo-img"> -->
-                <!-- <span class="logo-text"><span class="utili">UTILI</span><span class="sight">SIGHT</span></span> -->
             </a>
             <nav aria-label="Primary">
                 <ul>
@@ -122,138 +265,40 @@
     <main>
         <div class="page-hero">
             <div class="container">
-                <p class="kicker" data-reveal>Support</p>
-                <h1 data-reveal style="--d:80ms">Frequently asked questions</h1>
-                <p data-reveal style="--d:160ms">Everything you need to know about our drone inspection workflow,
-                    reporting, and compliance. Can't find an answer? Contact us.</p>
+                <p class="kicker" data-reveal>FAQ</p>
+                <h1 data-reveal style="--d:80ms">Questions, answered</h1>
+                <p data-reveal style="--d:160ms">What to expect before, during and after your inspection.</p>
             </div>
         </div>
 
         <section class="section">
             <div class="container">
-                <div class="acc-list" data-reveal>
-
-                    <div class="acc open">
-                        <button class="acc-head" aria-expanded="true">
-                            <span class="acc-num">Q</span>
-                            <span class="acc-title">
-                                <h3>Do we need to shut down operations?</h3><span>Power lines · Solar panels ·
-                                    Rooftops</span>
-                            </span>
-                            <span class="acc-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" />
-                                </svg></span>
-                        </button>
-                        <div class="acc-body">
-                            <div>
-                                <div class="acc-inner">
-                                    <p>No. One of the main advantages of drone inspections is that they are
-                                        non-intrusive. We capture optical and thermal data without requiring you to shut
-                                        down power lines, solar arrays, or facility operations.</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="faq-grid">
+                    <!-- Lista de Preguntas (Izquierda) -->
+                    <div class="faq-list">
+                        <button class="faq-item on" data-id="0"><em>01</em>Do we need to shut down operations?</button>
+                        <button class="faq-item" data-id="1"><em>02</em>What areas do you serve?</button>
+                        <button class="faq-item" data-id="2"><em>03</em>How much does an inspection cost?</button>
+                        <button class="faq-item" data-id="3"><em>04</em>What happens if the weather is bad?</button>
+                        <button class="faq-item" data-id="4"><em>05</em>Why are roof inspections done early in the morning?</button>
+                        <button class="faq-item" data-id="5"><em>06</em>Can you inspect the roof beneath solar panels?</button>
+                        <button class="faq-item" data-id="6"><em>07</em>How long until I receive my report?</button>
+                        <button class="faq-item" data-id="7"><em>08</em>What will I receive?</button>
+                        <button class="faq-item" data-id="8"><em>09</em>Does a thermal anomaly mean there's damage?</button>
+                        <button class="faq-item" data-id="9"><em>10</em>Do you also do repairs?</button>
                     </div>
 
-                    <div class="acc">
-                        <button class="acc-head" aria-expanded="false">
-                            <span class="acc-num">Q</span>
-                            <span class="acc-title">
-                                <h3>What is the turnaround time?</h3><span>48–72h SLA</span>
-                            </span>
-                            <span class="acc-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" />
-                                </svg></span>
-                        </button>
-                        <div class="acc-body">
-                            <div>
-                                <div class="acc-inner">
-                                    <p>We operate on a strict 48 to 72-hour SLA. From the moment the drone lands and
-                                        data is checksummed, you will receive your structured report, defect register,
-                                        and GIS exports within 3 days.</p>
-                                </div>
-                            </div>
+                    <!-- Panel de Respuesta (Derecha) -->
+                    <div class="faq-panel">
+                        <span class="faq-tag" id="faqTag">Before</span>
+                        <h3 id="faqTitle">Do we need to shut down operations?</h3>
+                        <p id="faqDesc">No. Solar arrays and distribution lines need to be operating, because anomalies show up under load. Roof inspections are done from the air, with no access to the building interior.</p>
+                        <div class="faq-panel-foot">
+                            <span>Still have questions? We respond within 1 business day.</span>
+                            <a href="../contact">Contact us →</a>
                         </div>
                     </div>
-
-                    <div class="acc">
-                        <button class="acc-head" aria-expanded="false">
-                            <span class="acc-num">Q</span>
-                            <span class="acc-title">
-                                <h3>Are your pilots certified?</h3><span>Transport Canada · Level II Thermography</span>
-                            </span>
-                            <span class="acc-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" />
-                                </svg></span>
-                        </button>
-                        <div class="acc-body">
-                            <div>
-                                <div class="acc-inner">
-                                    <p>Yes. All our pilots hold Transport Canada Advanced Operations RPAS
-                                        certifications. We also handle NAV CANADA authorizations in-house, and our
-                                        analysts are Level II certified thermographers.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="acc">
-                        <button class="acc-head" aria-expanded="false">
-                            <span class="acc-num">Q</span>
-                            <span class="acc-title">
-                                <h3>What happens if the weather is bad?</h3><span>Rescheduling policy</span>
-                            </span>
-                            <span class="acc-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" />
-                                </svg></span>
-                        </button>
-                        <div class="acc-body">
-                            <div>
-                                <div class="acc-inner">
-                                    <p>Safety and data quality are our priorities. If weather conditions (rain, high
-                                        winds, heavy cloud cover) prevent a safe or accurate flight, we will reschedule
-                                        the mission at no additional cost to you.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="acc">
-                        <button class="acc-head" aria-expanded="false">
-                            <span class="acc-num">Q</span>
-                            <span class="acc-title">
-                                <h3>What report formats do you deliver?</h3><span>PDF · CSV · GeoTIFF</span>
-                            </span>
-                            <span class="acc-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                    <path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" />
-                                </svg></span>
-                        </button>
-                        <div class="acc-body">
-                            <div>
-                                <div class="acc-inner">
-                                    <p>Reports are delivered in PDF format for executive summaries, CSV for the defect
-                                        register, and GeoTIFF for GIS-friendly exports. Every finding is GPS-tagged and
-                                        includes annotated imagery.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-        </section>
-
-        <section class="cta-band">
-            <div class="container cta-in">
-                <div data-reveal>
-                    <h2>Still have questions?</h2>
-                    <p>Tell us what you operate — we'll recommend the right inspection approach.</p>
-                </div>
-                <a href="../contact" class="btn btn-orange" data-reveal style="--d:100ms">Contact us
-                    <svg width="15" height="15" viewBox="0 0 14 14" fill="none">
-                        <path d="M2 7h9M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.8" />
-                    </svg>
-                </a>
             </div>
         </section>
     </main>
@@ -296,6 +341,37 @@
     </div>
 
     <script src="../js/script.js"></script>
+    <!-- Lógica para el panel interactivo de FAQ -->
+    <script>
+        const faqData = [
+            ["Before", "Do we need to shut down operations?", "No. Solar arrays and distribution lines need to be operating, because anomalies show up under load. Roof inspections are done from the air, with no access to the building interior."],
+            ["Before", "What areas do you serve?", "The Greater Toronto Area and Southern Ontario. For sites further away, contact us and we'll confirm availability."],
+            ["Before", "How much does an inspection cost?", "It depends on the asset type, site size and access. Send us the details and we'll prepare a free quote."],
+            ["During", "What happens if the weather is bad?", "Thermal imaging needs the right conditions: dry, calm and, for solar, sunny. We check conditions before every flight. If they aren't suitable, we reschedule to the next good window at no extra cost."],
+            ["During", "Why are roof inspections done early in the morning?", "After sunset, wet insulation holds heat longer than dry insulation. Flying in the early hours makes those differences easier to see."],
+            ["During", "Can you inspect the roof beneath solar panels?", "No. Thermal cameras can't see through panels. We assess the accessible roof areas and the system interfaces."],
+            ["After", "How long until I receive my report?", "Roofing reports are delivered within 48 hours of the flight. For solar and distribution, timing depends on site size and is confirmed in your quote."],
+            ["After", "What will I receive?", "A PDF report with paired thermal and visual images, GPS coordinates, temperature differences and a severity rating for every finding, plus recommended follow-up."],
+            ["After", "Does a thermal anomaly mean there's damage?", "Not necessarily. Thermography flags areas that behave differently and may need attention. A qualified contractor confirms the cause through physical testing."],
+            ["After", "Do you also do repairs?", "No. We're an independent inspection company. We don't sell repairs, roofing or solar installs, so our findings are objective."]
+        ];
+
+        const items = document.querySelectorAll('.faq-item');
+        const faqTag = document.getElementById('faqTag');
+        const faqTitle = document.getElementById('faqTitle');
+        const faqDesc = document.getElementById('faqDesc');
+
+        items.forEach((item) => {
+            item.addEventListener('click', () => {
+                const id = parseInt(item.getAttribute('data-id'));
+                items.forEach(x => x.classList.remove('on'));
+                item.classList.add('on');
+                faqTag.textContent = faqData[id][0];
+                faqTitle.textContent = faqData[id][1];
+                faqDesc.textContent = faqData[id][2];
+            });
+        });
+    </script>
 </body>
 
 </html>
