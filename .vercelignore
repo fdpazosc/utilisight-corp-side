@@ -1,0 +1,15 @@
+# Con .vercelignore presente, la CLI de Vercel NO usa .gitignore, por eso se repite lo sensible aquí
+.env
+.env.*
+.git
+.vercel
+node_modules
+# Documentación y fuentes de trabajo (no se publican)
+documentation
+images-src
+README.md
+example.env
+*.docx
+*.zip
+*_bk.*
+*_old.*

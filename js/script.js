@@ -99,7 +99,12 @@
       btnLabel = $("#btnLabel"),
       sentPanel = $("#sentPanel"),
       toast = $("#toast"),
-      toastRef = $("#toastRef");
+      toastRef = $("#toastRef"),
+      formError = $("#formError");
+    const showError = (msg) => {
+      formError.textContent = msg;
+      formError.hidden = false;
+    };
     let busy = false,
       toastTimer = null;
     const req = [
@@ -117,7 +122,7 @@
         el.closest(".fld").classList.remove("err"),
       );
     });
-    
+
     // Cambiamos la función a 'async' para poder esperar la respuesta del servidor
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
@@ -130,16 +135,17 @@
         if (bad) ok = false;
       });
       if (!ok) return;
-      
+
       busy = true;
       sendBtn.disabled = true;
       btnLabel.textContent = "Sending…";
+      formError.hidden = true;
 
       try {
-                // Enviar datos de forma segura a nuestra API en Vercel
-        const response = await fetch('/api/send', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+        // Enviar datos de forma segura a nuestra API en Vercel
+        const response = await fetch("./../api/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             name: $("#fName").value,
             company: $("#fCo").value,
@@ -148,13 +154,17 @@
             size: $("#fSize").value,
             window: $("#fWin").value,
             notes: $("#fNotes").value,
-            website: $("#fWebsite").value // <-- AÑADE ESTA LÍNEA
-          })
+            website: $("#fWebsite").value, // honeypot
+          }),
         });
 
-        // 2. Si el servidor respondió correctamente, mostramos el panel de éxito
+        // Si el servidor respondió correctamente, mostramos el panel de éxito
         if (response.ok) {
-          const ref = `UT-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
+          const data = await response.json().catch(() => ({}));
+          // La referencia la genera el servidor (la misma que va en el asunto del correo)
+          const ref =
+            data.ref ||
+            `UT-${new Date().getFullYear()}-${String(Math.floor(1000 + Math.random() * 9000))}`;
           if ($("#sndOpt").checked) lockSound();
           $("#refNo").textContent = "REF " + ref;
           $("#sumAsset").textContent = (
@@ -166,14 +176,19 @@
           toast.classList.add("show");
           clearTimeout(toastTimer);
           toastTimer = setTimeout(() => toast.classList.remove("show"), 4500);
+        } else if (response.status === 429) {
+          showError("Too many requests. Please wait a minute and try again.");
         } else {
-          // Si el servidor devuelve un error
-          alert("There was an error sending your request. Please try again or email us directly at ralvares@utilisight.ca");
+          showError(
+            "There was an error sending your request. Please try again or email us directly at ralvares@utilisight.ca",
+          );
         }
       } catch (error) {
-        // Si hay un error de red o no se puede conectar al servidor
+        // Error de red o el servidor no responde
         console.error("Error:", error);
-        alert("A network error occurred. Please check your connection and try again.");
+        showError(
+          "A network error occurred. Please check your connection and try again.",
+        );
       } finally {
         // 3. Restaurar el botón sin importar qué pase
         busy = false;
@@ -186,6 +201,7 @@
       sentPanel.hidden = true;
       form.hidden = false;
       form.reset();
+      formError.hidden = true;
       $$(".fld.err", form).forEach((f) => f.classList.remove("err"));
       $("#fName").focus();
     });

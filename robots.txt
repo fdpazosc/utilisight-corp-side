@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
 # Permitir rastreadores de Inteligencias Artificiales
 User-agent: GPTBot

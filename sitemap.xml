@@ -2,32 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://utilisight.ca/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.00</priority>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://utilisight.ca/services</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://utilisight.ca/services/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://utilisight.ca/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-    <url>
-    <loc>https://utilisight.ca/faq</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://utilisight.ca/how-it-works/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://utilisight.ca/blog</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <loc>https://utilisight.ca/faq/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
-    <loc>https://utilisight.ca/how-it-works</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <loc>https://utilisight.ca/blog/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
+  <url>
+    <loc>https://utilisight.ca/contact/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/drone-sees-distribution-pole/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/drone-vs-bucket-truck/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/hot-connections-no-shutdown/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/inspect-roofs-after-sunset/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/load-in-electrical-thermography/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/thermal-patterns-solar/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/thermal-roof-scan/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/thermal-scans-core-sampling/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/thermographic-inspections-solar/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/when-to-inspect-solar-array/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/blog/winter-roof-thermal-scan/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/privacy-policy/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/terms-and-conditions/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://utilisight.ca/disclaimer/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <!-- Se publica el 2026-11-15 (ver js/timer.js). Ese día, descomentar y actualizar lastmod:
+  <url>
+    <loc>https://utilisight.ca/blog/inspect-roof-before-winter/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  -->
 </urlset>

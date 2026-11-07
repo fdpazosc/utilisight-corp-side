@@ -204,10 +204,11 @@ html {
 }
 body {
   font:
-    400 16.5px / 1.75 Segoe UI, "Times New Roman", Times, serif
-    /*400 16.5px/1.75 "Acumin Variable Concept",*/
-    /*400 16.5px/1.75 "Inter",*/
-    ;
+    400 16.5px / 1.75 Segoe UI,
+    "Times New Roman",
+    Times,
+    serif /*400 16.5px/1.75 "Acumin Variable Concept",*/
+      /*400 16.5px/1.75 "Inter",*/;
   color: var(--body);
   background: #fff;
   -webkit-font-smoothing: antialiased;
@@ -215,6 +216,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto; /* necesario porque ahora los <img> llevan width/height */
 }
 ::selection {
   background: var(--orange);
@@ -1278,6 +1280,13 @@ nav a.active::after {
 #sendBtn {
   grid-column: 1/-1;
 }
+.form-error {
+  grid-column: 1/-1;
+  margin: 0;
+  color: #d64545;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 .form-note {
   grid-column: 1/-1;
   text-align: center;
@@ -1515,17 +1524,17 @@ footer {
     padding: 130px 0 80px;
   }
 }
-@media(max-width: 930px) {
+@media (max-width: 930px) {
   .split-media img {
     object-position: -600px center;
   }
 }
-@media(max-width: 850px) {
+@media (max-width: 850px) {
   .split-media img {
     object-position: -500px center;
   }
 }
-@media(max-width: 700px) {
+@media (max-width: 700px) {
   .split-media img {
     object-position: -400px center;
   }
@@ -1605,8 +1614,12 @@ footer {
   text-transform: uppercase;
   margin-bottom: 14px;
 }
-.svc-page .page-hero .kicker::before { display: none; }
-.eyebrow { display: block; }
+.svc-page .page-hero .kicker::before {
+  display: none;
+}
+.eyebrow {
+  display: block;
+}
 
 /* ---------- footer: fila legal ---------- */
 .foot-legal {
