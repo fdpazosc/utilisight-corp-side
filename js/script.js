@@ -180,7 +180,7 @@
           showError("Too many requests. Please wait a minute and try again.");
         } else {
           showError(
-            "There was an error sending your request. Please try again or email us directly at ralvares@utilisight.ca",
+            "There was an error sending your request. Please try again or email us directly at ralvarez@utilisight.ca",
           );
         }
       } catch (error) {
@@ -211,3 +211,10 @@
   const yr = $("#year");
   if (yr) yr.textContent = new Date().getFullYear();
 })();
+
+document.querySelectorAll(".compare").forEach((c) => {
+  const r = c.querySelector(".compare-range");
+  const set = () => c.style.setProperty("--pos", r.value + "%");
+  r.addEventListener("input", set);
+  set();
+});

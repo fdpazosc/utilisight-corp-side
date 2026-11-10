@@ -1372,6 +1372,13 @@ footer {
   letter-spacing: 0.12em;
   text-decoration: none;
 }
+
+.foot-logo-img {
+  height: 30px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
 .foot-logo .utili {
   color: #fff;
 }
@@ -1646,4 +1653,84 @@ footer {
    (arregla el panel "Request received" visible antes de enviar el formulario) */
 [hidden] {
   display: none !important;
+}
+
+.compare {
+  position: relative;
+  max-width: 860px;
+  margin: 48px auto 0;
+  aspect-ratio: 16/9;
+  border-radius: var(--r);
+  overflow: hidden;
+  box-shadow: var(--sh-md);
+  --pos: 50%;
+  user-select: none;
+}
+.compare img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.compare-top {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--pos)) 0 0);
+}
+.compare-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--pos);
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.compare-handle::after {
+  content: "↔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  box-shadow: var(--sh-md);
+}
+.compare-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+  touch-action: pan-y;
+}
+.compare-tag {
+  position: absolute;
+  bottom: 14px;
+  padding: 6px 14px;
+  border-radius: 99px;
+  background: rgba(20, 27, 51, 0.8);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  pointer-events: none;
+}
+.compare-tag.left {
+  left: 14px;
+}
+.compare-tag.right {
+  right: 14px;
+}
+.compare-range:focus-visible ~ .compare-handle::after {
+  outline: 3px solid #fff;
 }
