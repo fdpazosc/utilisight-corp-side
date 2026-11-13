@@ -170,7 +170,7 @@ function buildHtml(d, ref) {
                     </tr>
                     <tr>
                       <td class="email-footer" style="background-color:#f6f8fa; padding:20px 40px; text-align:center;">
-                        <p style="margin:0; color:#979ea8; font-size:12px;">© ${new Date().getFullYear()} Utilisight Corp · Ontario-wide operations</p>
+                        <p style="margin:0; color:#979ea8; font-size:12px;">© ${new Date().getFullYear()} Utilisight Corp · Southern Ontario - GTA operations</p>
                         <p style="margin:5px 0 0 0; color:#979ea8; font-size:11px;">This email was sent from the Utilisight website contact form.</p>
                       </td>
                     </tr>
