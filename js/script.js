@@ -1,5 +1,23 @@
 (() => {
   "use strict";
+
+  /* ---------- Google Analytics (solo producción) ---------- */
+  const GA_ID = "G-XXXXXXXXXX"; // Reemplazar
+  if (location.hostname.includes("utilisight.ca")) {
+    const s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () {
+      dataLayer.push(arguments);
+    };
+    gtag("js", new Date());
+    gtag("config", GA_ID);
+  }
+
+  /* ---------- El resto de tu código original ---------- */
+
   const $ = (s, c = document) => c.querySelector(s),
     $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
